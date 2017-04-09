@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+	mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+	compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
+	compile group: 'joda-time', name: 'joda-time', version: '2.3'
+	compile group: 'org.jbox2d', name: 'jbox2d', version: '2.2.1.1'
+	// https://mvnrepository.com/artifact/org.jbox2d/jbox2d-testbed
+//compile group: 'org.jbox2d', name: 'jbox2d-testbed', version: '2.2.1.1'
+// https://mvnrepository.com/artifact/org.jbox2d/jbox2d-testbed
+compile group: 'org.jbox2d', name: 'jbox2d-testbed', version: '2.1.2.3'
+
+	
+	
+	
+}
+
+sourceSets.main.java.srcDirs = ['src']
